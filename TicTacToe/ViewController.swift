@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var userUID : String?
+    
+    @IBOutlet weak var txtPlayerEmail: UITextField!
     let imageX = UIImage(named: "cross.png")
     let imageO = UIImage(named: "nought.png")
     override func viewDidLoad() {
@@ -156,6 +159,12 @@ class ViewController: UIViewController {
             winnerAlert(msg: "The game is draw", title: "Draw")
             
         }
+    }
+    
+    @IBAction func requestButton(_ sender: Any) {
+    }
+    
+    @IBAction func acceptButton(_ sender: Any) {
     }
 }
 

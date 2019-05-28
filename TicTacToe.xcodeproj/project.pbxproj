@@ -13,6 +13,7 @@
 		5E2C3362229D7B5F00C92F88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E2C3361229D7B5F00C92F88 /* Assets.xcassets */; };
 		5E2C3365229D7B5F00C92F88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E2C3363229D7B5F00C92F88 /* LaunchScreen.storyboard */; };
 		5E2C336D229D905600C92F88 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E2C336C229D905600C92F88 /* GoogleService-Info.plist */; };
+		5E2C336F229DA28800C92F88 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2C336E229DA28800C92F88 /* LoginViewController.swift */; };
 		B144A7E5F95FB7C05642B3A8 /* Pods_TicTacToe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9714DEBCF622FDB1D1FC1468 /* Pods_TicTacToe.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		5E2C3364229D7B5F00C92F88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E2C3366229D7B5F00C92F88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E2C336C229D905600C92F88 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5E2C336E229DA28800C92F88 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9714DEBCF622FDB1D1FC1468 /* Pods_TicTacToe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TicTacToe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B356807F2F93FDBDC724BCD1 /* Pods-TicTacToe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTacToe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TicTacToe/Pods-TicTacToe.debug.xcconfig"; sourceTree = "<group>"; };
 		EA6507A1E5FA7B32C0F686A0 /* Pods-TicTacToe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTacToe.release.xcconfig"; path = "Pods/Target Support Files/Pods-TicTacToe/Pods-TicTacToe.release.xcconfig"; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				5E2C335A229D7B5D00C92F88 /* AppDelegate.swift */,
+				5E2C336E229DA28800C92F88 /* LoginViewController.swift */,
 				5E2C335C229D7B5D00C92F88 /* ViewController.swift */,
 				5E2C335E229D7B5D00C92F88 /* Main.storyboard */,
 				5E2C3361229D7B5F00C92F88 /* Assets.xcassets */,
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E2C336F229DA28800C92F88 /* LoginViewController.swift in Sources */,
 				5E2C335D229D7B5D00C92F88 /* ViewController.swift in Sources */,
 				5E2C335B229D7B5D00C92F88 /* AppDelegate.swift in Sources */,
 			);

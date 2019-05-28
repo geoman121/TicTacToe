@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QUr-WD-eY8">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,71 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="bLW-lH-uki">
+            <objects>
+                <viewController id="QUr-WD-eY8" customClass="LoginViewController" customModule="TicTacToe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dQ7-f9-veJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMc-LV-Zxe">
+                                <rect key="frame" x="147" y="418" width="120" height="38"/>
+                                <color key="backgroundColor" red="0.075574723875616534" green="0.53739689086294418" blue="0.33266985037190766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerButton:" destination="QUr-WD-eY8" eventType="touchUpInside" id="Ou2-1Q-H7G"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zu4-DY-IUX">
+                                <rect key="frame" x="20" y="277" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UP2-Q1-oG5">
+                                <rect key="frame" x="20" y="345" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please register to play TicTacToe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJf-Bz-1Oh">
+                                <rect key="frame" x="58" y="190" width="298" height="25"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UP2-Q1-oG5" firstAttribute="leading" secondItem="fVy-Kz-heC" secondAttribute="leading" constant="20" id="37c-bq-YRj"/>
+                            <constraint firstItem="fVy-Kz-heC" firstAttribute="trailing" secondItem="cMc-LV-Zxe" secondAttribute="trailing" constant="147" id="Dct-Qm-pmH"/>
+                            <constraint firstItem="zu4-DY-IUX" firstAttribute="leading" secondItem="fVy-Kz-heC" secondAttribute="leading" constant="20" id="KuM-nM-rIc"/>
+                            <constraint firstItem="fVy-Kz-heC" firstAttribute="trailing" secondItem="zu4-DY-IUX" secondAttribute="trailing" constant="20" id="NqF-Qh-kFo"/>
+                            <constraint firstItem="aJf-Bz-1Oh" firstAttribute="leading" secondItem="fVy-Kz-heC" secondAttribute="leading" constant="58" id="OIY-Ea-4qw"/>
+                            <constraint firstItem="UP2-Q1-oG5" firstAttribute="top" secondItem="zu4-DY-IUX" secondAttribute="bottom" constant="38" id="WX9-59-PUb"/>
+                            <constraint firstItem="cMc-LV-Zxe" firstAttribute="top" secondItem="UP2-Q1-oG5" secondAttribute="bottom" constant="43" id="app-PL-HZE"/>
+                            <constraint firstItem="zu4-DY-IUX" firstAttribute="top" secondItem="aJf-Bz-1Oh" secondAttribute="bottom" constant="62" id="iJc-7b-4yC"/>
+                            <constraint firstItem="fVy-Kz-heC" firstAttribute="trailing" secondItem="aJf-Bz-1Oh" secondAttribute="trailing" constant="58" id="l6Y-R2-XtK"/>
+                            <constraint firstItem="fVy-Kz-heC" firstAttribute="trailing" secondItem="UP2-Q1-oG5" secondAttribute="trailing" constant="20" id="qvi-FA-f3H"/>
+                            <constraint firstItem="cMc-LV-Zxe" firstAttribute="leading" secondItem="fVy-Kz-heC" secondAttribute="leading" constant="147" id="u6R-4x-2W9"/>
+                            <constraint firstItem="aJf-Bz-1Oh" firstAttribute="top" secondItem="fVy-Kz-heC" secondAttribute="top" constant="146" id="zSc-sx-n3W"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fVy-Kz-heC"/>
+                    </view>
+                    <connections>
+                        <outlet property="txtEmail" destination="zu4-DY-IUX" id="yD5-ZV-TNs"/>
+                        <outlet property="txtPassword" destination="UP2-Q1-oG5" id="y3U-nR-NBc"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="playGame" id="XWS-hz-Gax"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XjK-3T-XJp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-672.46376811594212" y="150"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -94,14 +159,49 @@
                                     <action selector="butonSelect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pQ8-X9-yF2"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Friend email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lrt-qH-U1i">
+                                <rect key="frame" x="20" y="115" width="374" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80753040323400493" green="0.9288628469939032" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFX-fM-Wx7">
+                                <rect key="frame" x="79" y="153" width="110" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1495126635" green="0.72584652900000002" blue="0.97254902119999997" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="Request">
+                                    <color key="titleColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="requestButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f9S-bv-gKo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ezj-Qx-HDJ">
+                                <rect key="frame" x="234" y="153" width="110" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.07557472388" green="0.53739689089999998" blue="0.33266985040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="Accept">
+                                    <color key="titleColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="acceptButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nu9-EN-wQf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="txtPlayerEmail" destination="lrt-qH-U1i" id="rd3-4X-dvr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
+            <point key="canvasLocation" x="53.623188405797109" y="150"/>
         </scene>
     </scenes>
     <resources>
