@@ -18,10 +18,8 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.ref = Database.database().reference()
-        if let user = Auth.auth().currentUser{
-            self.UserUID = user.uid
+       
             goToPlayGame()
-        }
     }
     
 
@@ -52,10 +50,14 @@ class LoginViewController: UIViewController {
         }
     }
     
-    var UserUID : String?
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vcPlayGame = segue.destination as? ViewController{
-            vcPlayGame.userUID = UserUID
+             if let user = Auth.auth().currentUser{
+            vcPlayGame.userUID = user.uid
+            vcPlayGame.userEmail = user.email
+
         }
     }
+}
 }

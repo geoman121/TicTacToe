@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMc-LV-Zxe">
-                                <rect key="frame" x="147" y="418" width="120" height="38"/>
+                                <rect key="frame" x="147" y="415" width="120" height="38"/>
                                 <color key="backgroundColor" red="0.075574723875616534" green="0.53739689086294418" blue="0.33266985037190766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Register">
@@ -30,20 +30,20 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zu4-DY-IUX">
-                                <rect key="frame" x="20" y="277" width="374" height="30"/>
+                                <rect key="frame" x="20" y="274" width="374" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UP2-Q1-oG5">
-                                <rect key="frame" x="20" y="345" width="374" height="30"/>
+                                <rect key="frame" x="20" y="342" width="374" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please register to play TicTacToe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJf-Bz-1Oh">
-                                <rect key="frame" x="58" y="190" width="298" height="25"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
+                                <rect key="frame" x="58" y="190" width="298" height="22"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -159,16 +159,15 @@
                                     <action selector="butonSelect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pQ8-X9-yF2"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Friend email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lrt-qH-U1i">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Friend email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lrt-qH-U1i">
                                 <rect key="frame" x="20" y="115" width="374" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80753040323400493" green="0.9288628469939032" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFX-fM-Wx7">
-                                <rect key="frame" x="79" y="153" width="110" height="40"/>
+                                <rect key="frame" x="79" y="153" width="108" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1495126635" green="0.72584652900000002" blue="0.97254902119999997" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
@@ -179,8 +178,16 @@
                                     <action selector="requestButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f9S-bv-gKo"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YpS-bM-Njv">
+                                <rect key="frame" x="20" y="58" width="30" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="&lt;"/>
+                                <connections>
+                                    <segue destination="QUr-WD-eY8" kind="show" id="9wh-7m-JNo"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ezj-Qx-HDJ">
-                                <rect key="frame" x="234" y="153" width="110" height="40"/>
+                                <rect key="frame" x="216" y="153" width="108" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.07557472388" green="0.53739689089999998" blue="0.33266985040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
@@ -193,9 +200,26 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lrt-qH-U1i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="T4n-4y-zYi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lrt-qH-U1i" secondAttribute="trailing" constant="20" id="cid-Xw-rMl"/>
+                            <constraint firstItem="lrt-qH-U1i" firstAttribute="top" secondItem="YpS-bM-Njv" secondAttribute="bottom" constant="8" id="iS0-8u-2OG"/>
+                            <constraint firstItem="YpS-bM-Njv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="14" id="ldP-qC-4K3"/>
+                            <constraint firstItem="lrt-qH-U1i" firstAttribute="top" secondItem="YpS-bM-Njv" secondAttribute="bottom" constant="8" id="nv5-aX-xbq"/>
+                            <constraint firstItem="YpS-bM-Njv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zfb-4u-odP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="bu1" destination="iP1-4U-chv" id="L1z-Yl-Sxd"/>
+                        <outlet property="bu2" destination="XFq-Mk-fzo" id="ODK-yb-cuD"/>
+                        <outlet property="bu3" destination="GV2-Fc-YpE" id="AiF-ys-Lb9"/>
+                        <outlet property="bu4" destination="Gks-c4-oHO" id="3pb-aq-Fcl"/>
+                        <outlet property="bu5" destination="39z-Pc-RKw" id="JkD-rj-fQu"/>
+                        <outlet property="bu6" destination="PuL-94-LUO" id="dIE-OE-Tqa"/>
+                        <outlet property="bu7" destination="ShM-Gu-elO" id="n3A-n1-d5y"/>
+                        <outlet property="bu8" destination="1do-Pa-hQP" id="fv3-Ng-we1"/>
+                        <outlet property="bu9" destination="TVk-11-Ihq" id="Sqe-LK-3J0"/>
                         <outlet property="txtPlayerEmail" destination="lrt-qH-U1i" id="rd3-4X-dvr"/>
                     </connections>
                 </viewController>
